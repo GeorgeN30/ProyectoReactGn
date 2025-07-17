@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.list-group-item {
+  border-radius: 10px !important;
+}
+.lista-alumnos-dark {
+  background-color: #0d1117; /* Fondo tipo GitHub */
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+.list-group-item {
+  background-color: #161b22 !important;
+  border: 1px solid #30363d;
+}
+
+.list-group-item-dark {
+  background-color: #21262d !important;
+  color: #c9d1d9;
+  border: none;
+  margin-bottom: 6px;
+}
+
+.card.bg-dark {
+  border: 1px solid #30363d;
+}
+
+.text-light {
+  color: #c9d1d9 !important;
+}
