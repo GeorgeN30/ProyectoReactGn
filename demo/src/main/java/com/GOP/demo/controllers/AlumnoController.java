@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/api/alumnos")
-@CrossOrigin(origins = "https:localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class AlumnoController {
     @Autowired
     private AlumnoService alumnoService;
