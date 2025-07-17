@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.GOP.demo.models.Alumno;
+import com.GOP.demo.models.Nota;
 import com.GOP.demo.repository.AlumnoRepository;
 
 @Service
@@ -13,6 +14,11 @@ public class AlumnoService {
     AlumnoRepository alumnoRepository;
 
     public void guardarAlumno(Alumno alumno){
+        if (alumno.getNotas() != null) {
+        for (Nota nota : alumno.getNotas()) {
+            nota.setAlumno(alumno);
+        }
+    }
         alumnoRepository.save(alumno);
     }
 

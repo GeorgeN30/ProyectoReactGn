@@ -3,6 +3,8 @@ package com.GOP.demo.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +25,7 @@ public class Alumno {
     private String correoA;
 
     @OneToMany(mappedBy = "alumno", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<Nota> notas = new ArrayList<>();
     
     public Integer getIdAlumno() {

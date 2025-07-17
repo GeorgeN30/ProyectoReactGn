@@ -1,5 +1,7 @@
 package com.GOP.demo.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,6 +22,7 @@ public class Nota {
 
     @ManyToOne
     @JoinColumn(name = "IdAlumno")
+    @JsonBackReference
     private Alumno alumno;
 
     public Integer getIdN() {
